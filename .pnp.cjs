@@ -28,7 +28,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["express", "npm:4.18.2"]\
+            ["express", "npm:4.18.2"],\
+            ["express-fileupload", "npm:1.4.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -70,6 +71,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["raw-body", "npm:2.5.1"],\
             ["type-is", "npm:1.6.18"],\
             ["unpipe", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["busboy", [\
+        ["npm:1.6.0", {\
+          "packageLocation": "./.yarn/cache/busboy-npm-1.6.0-ebb5cbb04b-32801e2c01.zip/node_modules/busboy/",\
+          "packageDependencies": [\
+            ["busboy", "npm:1.6.0"],\
+            ["streamsearch", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -248,12 +259,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["express-fileupload", [\
+        ["npm:1.4.0", {\
+          "packageLocation": "./.yarn/cache/express-fileupload-npm-1.4.0-000c52139e-4dad1dab12.zip/node_modules/express-fileupload/",\
+          "packageDependencies": [\
+            ["express-fileupload", "npm:1.4.0"],\
+            ["busboy", "npm:1.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["express-upload-file", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
             ["express-upload-file", "workspace:."],\
-            ["express", "npm:4.18.2"]\
+            ["express", "npm:4.18.2"],\
+            ["express-fileupload", "npm:1.4.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -613,6 +635,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/statuses-npm-2.0.1-81d2b97fee-18c7623fdb.zip/node_modules/statuses/",\
           "packageDependencies": [\
             ["statuses", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["streamsearch", [\
+        ["npm:1.1.0", {\
+          "packageLocation": "./.yarn/cache/streamsearch-npm-1.1.0-fc3ad6536d-1cce16cea8.zip/node_modules/streamsearch/",\
+          "packageDependencies": [\
+            ["streamsearch", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
